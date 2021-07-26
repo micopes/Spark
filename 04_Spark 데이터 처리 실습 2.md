@@ -1,10 +1,15 @@
 # DAG(Directed Acyclic Graph)
+![image](https://user-images.githubusercontent.com/43158502/127149886-daec9c66-a712-498a-8830-0437fde033d2.png)
+
 - node는 **RDDs**
 - arrow는 **Transformation**
 
 > C에서 문제가 생기면 B에서부터 다시 동작.
 
+![image](https://user-images.githubusercontent.com/43158502/127149959-3d9dba9d-b40f-44c8-940a-8c5d128662f8.png)
+
 > n개의 stage로 나뉘고 각 stage에서 m개의 task로 나뉜다.
+
 
 
 ## Transformation
@@ -26,6 +31,12 @@
 
 ### Structured API
 
+![image](https://user-images.githubusercontent.com/43158502/127150022-bc86c69d-296b-4e3f-8ab1-ef537063165e.png)
+
+### Catalyst Optimizer
+- **Catalyst Optimizer가 실질적으로 DAG를 최적화.**
+- Logical Plan -> Physical Plan.
+- SQL/DataFrame/Dataset 관련 없이 실행계획은 같다.
 
 
 pivot : reshaping data
@@ -46,6 +57,9 @@ pivot : reshaping data
 <br>
 
 ## DataFrame/Dataset/SQL
+
+![image](https://user-images.githubusercontent.com/43158502/127150240-24d97e41-a84c-4a99-a62a-4665704be53f.png)
+
 
 - DataFrame, Dataset 사용 시 compile time 시에 미리 검출 가능.
 - **DataFrame, Dataset, SQL 모두 Catalyst Optimizer를 사용하므로 성능은 거의 동일**
