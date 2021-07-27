@@ -42,6 +42,8 @@
   - Driver쪽으로 결과를 리턴하거나 저장하는 동작.
   - ex) count, collect, save
 
+![image](https://user-images.githubusercontent.com/43158502/127147567-ae51f802-f10f-4806-ad5c-f4bc93d0f74c.png)
+
 ### DAG 
 > **Transformation**을 여러 번 하더라도 실질적으로는 **Action** 단계에서 최적화.
 
