@@ -33,9 +33,19 @@
   - 실제로 task들이 수행되는 곳
 
 ## Spark 구성 옵션
+
 - Local mode
+
+![image](https://user-images.githubusercontent.com/43158502/127152560-4f42ae61-b084-4bbc-9e1a-6a1cc73753a1.png)
+
 - Standalone mode
+
+![image](https://user-images.githubusercontent.com/43158502/127152600-b66d14b7-4951-4cef-a794-6bebb10d3610.png)
+
 - Yarn mode
+
+![image](https://user-images.githubusercontent.com/43158502/127152631-00f4b755-4da2-4faa-9446-34bf1d64476f.png)
+
   - Yarn에게 resource 요청
   - Yarn의 Resource manager가 이를 할당
   - 자원이 할당되면 container에 이러한 것들이 할당
