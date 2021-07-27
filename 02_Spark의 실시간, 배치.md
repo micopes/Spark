@@ -34,6 +34,10 @@
   - Latency in seconds (Latency가 있으나, 1~수초안에 해결.)
   - Windowing, Stageful => Spark streaming
 
+![image](https://user-images.githubusercontent.com/43158502/127141795-f8aac1be-33eb-4f2d-bb16-8f6a5b0c3ef4.png)
+![image](https://user-images.githubusercontent.com/43158502/127141817-7360df6a-7984-4eba-b540-116acf223a8e.png)
+![image](https://user-images.githubusercontent.com/43158502/127141832-012273b6-0824-42c9-9b93-90769c10de9e.png)
+
 <br>
 
 ### Source Operator -> Processing Operator -> Sink
