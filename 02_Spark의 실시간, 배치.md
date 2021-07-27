@@ -61,7 +61,7 @@
 #### Accumulator : 디버깅 용으로 주로 활용, Cluster 전체 증분 가능 data
 
 #### Broadcast : Read-only로 가져오는 것 (ex) 기준 정보)
-  - JVM GC issue가 있다.
+  - **JVM GC issue**가 있다.
 
 ### 구조적인 고려사항
 - data가 커지면 -> 연산 비용이 증가
