@@ -3,6 +3,9 @@
 ## PySpark
 #### 참고) [Udemy Spark and Python for Big Data with PySpark](https://www.udemy.com/course/spark-and-python-for-big-data-with-pyspark/)
 
+### 중단
+- 구성보다 분석 및 분석 결과에 초점
+- 과거 version이라 수행이 되지 않는 경우가 있다.
 
 ## Spark 간단 정리
 
