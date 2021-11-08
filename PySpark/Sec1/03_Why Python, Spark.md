@@ -25,3 +25,33 @@
   - AWS S3
   - HDFS
   - And more.
+
+
+### Spark vs MapReduce
+- MapReduce는 file이 HDFS에 저장되어 있어야 하지만, spark는 다양하게 저장된 형식에 사용 가능
+- Spark가 MapReduce보다 100배 빠르다.
+  - Spark : **Memory Based**
+  - MapReduce : **Disk Based**
+
+## Spark RDD
+- Distributed Collection of data
+- Fault Tolerance
+- Parallel operation - partioned
+- Ability to use many data resources
+
+![image](https://user-images.githubusercontent.com/43158502/140716041-8e5896b3-6d73-4e4c-af33-248e5ccffc5d.png)
+
+### Transformation
+  - Lazy operation이라고도 한다. **실질적으로 spark이 일을 하는 단계는 아니다.**
+  - 새로운 RDD를 생성한다고 보면 됨.
+  - ex) map, filter, groupBy, join
+
+### Action
+  - 값을 반환하거나, 저장소에 쓰는 등의 실질적인 동작을 하는 단계.
+  - Driver쪽으로 결과를 리턴하거나 저장하는 동작.
+  - ex) count, collect, save
+
+![image](https://user-images.githubusercontent.com/43158502/127147567-ae51f802-f10f-4806-ad5c-f4bc93d0f74c.png)
+
+### DAG 
+> **Transformation**을 여러 번 하더라도 실질적으로는 **Action** 단계에서 최적화.
